@@ -6,6 +6,9 @@ body {
     background-color :lightgray 
 }
 
+
+
+
 nav {
     margin-left:  0px;
 }
@@ -17,6 +20,10 @@ article {
 
 img { 
    max-width: 100%; width: 340px; height: 340px; object-fit: contain; margin-left: 10px;}
+
+
+   /* hero*/
+
 
 #hero-text {
     position: absolute;
