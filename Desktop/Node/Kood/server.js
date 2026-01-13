@@ -1,8 +1,8 @@
 import http from "http";
 const PORT = 8000;
 const server = http.createServer((req, res) => {
-  res.writeHead("500", { "Content-Type": "application/json" });
-  res.end(JSON.stringify({ message: "Internal Server Error" }));
+  res.writeHead("200", { "Content-Type": "text/html" });
+  res.end("<h1> Hello World </h1>");
 });
 
 server.listen(PORT, () => {
