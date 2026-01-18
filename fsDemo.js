@@ -1,0 +1,42 @@
+import { readFile } from "fs";
+import fs from "fs/promises";
+
+// readFile() - callback
+
+/*fs.readFile("./test.txt", "utf8", (err, data) => {
+  if (err) throw err;
+  console.log(data);
+});
+
+// readFileSync() - synchronous
+
+const data = fs.readFileSync("./test.txt", "utf8");
+console.log(data); */
+
+// readFile() - Promise .then ()
+
+/*fs.readFile("./test.txt", "utf8")
+  .then((data) => console.log(data))
+  .catch((err) => console.error(err));
+*/
+// readFile() - async/await
+const read = async () => {
+  try {
+    const data = await fs.readFile("./test.txt", "utf8");
+    console.log(data);
+  } catch (error) {
+    console.error(error);
+  }
+};
+
+// writeFile() - async/await
+const writeFile = async () => {
+  try {
+    await fs.writeFile("./test.txt", "Hello, I am writing this file");
+    console.log("File written to...");
+  } catch (error) {
+    console.error(error);
+  }
+};
+readFile();
+writeFile();
