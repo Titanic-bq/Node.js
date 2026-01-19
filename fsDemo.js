@@ -1,4 +1,4 @@
-import { readFile } from "fs";
+//import { readFile } from "fs";
 import fs from "fs/promises";
 
 // readFile() - callback
@@ -38,5 +38,6 @@ const writeFile = async () => {
     console.error(error);
   }
 };
-readFile();
+
 writeFile();
+read();
